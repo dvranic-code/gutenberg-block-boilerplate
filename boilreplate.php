@@ -5,12 +5,12 @@
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Dejan Rudic Vranic
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       boilreplate
  *
- * @package           create-block
+ * @package           dvranic
  */
 
 /**
@@ -20,7 +20,7 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_boilreplate_block_init() {
+function dvranic_boilreplate_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_boilreplate_block_init' );
+add_action( 'init', 'dvranic_boilreplate_block_init' );
